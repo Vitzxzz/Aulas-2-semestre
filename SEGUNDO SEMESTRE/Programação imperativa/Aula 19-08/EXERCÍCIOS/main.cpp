@@ -13,6 +13,7 @@
 //Obs:
 //O programa deve certificar que os dois números sejam distintos entre si.
 //O programa não pode empregar nenhum comando de repetição, nem armazenar dados em array.
+
 //(b) Escreva um programa na linguagem C que, dadas três letras distintas fornecidas pelo usuário (via teclado),
 //imprima-as em ordem alfabética.
 //Obs:
@@ -37,11 +38,14 @@
 
 //a) Sendo H = 1 + 1/2 + 1/3 + ¼ + ... 1/N, escreva um programa em C para gerar o número H.
 //O valor de N deve ser fornecido pelo usuário. Use a estrutura for para somar a sequência de termos.
+
 //(b) Escreva um programa em C para calcular o fatorial de um número N fornecido pelo usuário.
 //Use a estrutura for para gerar a sequência de termos.
+
 //(c) Escreva um programa em C para calcular o valor da série S abaixo.
 //O valor de N deve ser fornecido pelo usuário. Use a estrutura do-while para somar a sequência de termos.
 //S = 1/N + 2/N-1 + 3/N-2 + ...+ N-1/2 + N/1
+
 //(d) Escreva um programa em C para imprimir os 30 primeiros números naturais pares.
 //Use a estrutura for para gerar a sequência de termos.
 
@@ -50,6 +54,7 @@
 //CONST - ENUM - TYPEDEF
 
 //(a) Defina um tipo enumerado para representar 10 moedas diferentes (real, dólar, libra, etc).
+
 //(b) Defina um tipo enumerado para representar 10 línguas diferentes (português, alemão, francês, etc).
 
 int main()
