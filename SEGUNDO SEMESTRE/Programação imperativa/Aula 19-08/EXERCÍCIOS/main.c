@@ -2,17 +2,36 @@
 
 
 
-//EXERCÍCIOS DA AULA DE PROGRAMAÇÃO IMPERATIVA
+//EXERCICIOS DA AULA DE PROGRAMACAO IMPERATIVA
 
 
 
 //IF ELSE:
 
-//(a) Escreva um programa na linguagem C que, dados dois números inteiros distintos fornecidos pelo usuário (via
+//(a) Escreva um programa na linguagem C que, dados dois numeros inteiros distintos fornecidos pelo usuario (via
 //teclado), imprima-os em ordem crescente.
 //Obs:
-//O programa deve certificar que os dois números sejam distintos entre si.
-//O programa não pode empregar nenhum comando de repetição, nem armazenar dados em array.
+//O programa deve certificar que os dois nnmeros sejam distintos entre si.
+//O programa nao pode empregar nenhum comando de repetição, nem armazenar dados em array.
+
+//int main()
+//{
+//int a;
+//int b;
+//printf("Digite um número inteiro: ");
+//scanf("%d", &a);
+//printf("Digite um número diferente do anterior: ");
+//scanf("%d", &b);
+//if (a == b){
+    //printf("O número é igual o anterior.");    
+    //}
+//else if (a>b){
+    //printf("Os números em forma crescente: %d, %d\n", b, a );
+//}
+//else{
+    //printf("Os números em forma crescente: %d, %d\n", a, b);
+//}
+//}
 
 //(b) Escreva um programa na linguagem C que, dadas três letras distintas fornecidas pelo usuário (via teclado),
 //imprima-as em ordem alfabética.
@@ -20,7 +39,40 @@
 //O programa deve certificar que as três letras sejam distintas entre si.
 //O programa não pode empregar nenhum comando de repetição, nem armazenar dados em array.
 
+//int main(){
+//    char var1;
+//    char var2;
+//    char var3;
 
+//    printf("Digite uma letra: 1/3");
+//    scanf(" %c", &var1);
+//    printf("Digite uma letra diferente da anterior: 2/3");
+//    scanf(" %c", &var2);
+//    printf("Digite uma letra diferente das anteriores: 3/3");
+//    scanf(" %c", &var3);
+//
+//    if (var1 == var2 || var1 == var3 || var2 == var3){
+//        printf("As letras são iguais.");
+//    }
+//    else if(var1 < var2 && var2 < var3){
+//        printf("As letras em ordem alfabética: %c, %c, %c", var1, var2, var3);
+//    }
+//    else if(var1 < var3 && var3 < var2){
+//        printf("As letras em ordem alfabética: %c, %c, %c", var1, var3, var2);
+//    }
+//    else if(var2 < var1 && var1 < var3){
+//        printf("As letras em ordem alfabética: %c, %c, %c", var2, var1, var3);
+//    }
+//    else if(var2 < var3 && var3 < var1){
+//        printf("As letras em ordem alfabética: %c, %c, %c", var2, var3, var1);
+//    }
+//   else if(var3 < var1 && var1 < var2){
+//        printf("As letras em ordem alfabética: %c, %c, %c", var3, var1, var2);
+//    }
+//    else{
+//        printf("As letras em ordem alfabética: %c, %c, %c", var3, var2, var1);
+//    }
+//}
 
 //SWITCH:
 
@@ -56,8 +108,3 @@
 //(a) Defina um tipo enumerado para representar 10 moedas diferentes (real, dólar, libra, etc).
 
 //(b) Defina um tipo enumerado para representar 10 línguas diferentes (português, alemão, francês, etc).
-
-int main()
-{
-
-}
