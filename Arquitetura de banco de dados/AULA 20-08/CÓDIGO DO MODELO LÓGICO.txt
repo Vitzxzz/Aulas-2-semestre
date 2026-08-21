@@ -1,0 +1,27 @@
+CÓDIGO DO MODELO LÓGICO:
+
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+
+Table LIVROAUTOR {
+  id_livroautor int [primary key]
+  id_livro int 
+  id_autor int
+}
+
+Table LIVRO {
+  id_livro int() [primary key]
+  titulo varchar(45)
+  ano year()
+}
+
+Table AUTOR {
+  id_autor int() [primary key]
+  nome varchar(45)
+}
+
+
+
+Ref: "LIVRO"."id_livro" ?<? "LIVROAUTOR"."id_livro"
+
+Ref: "LIVROAUTOR"."id_autor" ?>? "AUTOR"."id_autor"
