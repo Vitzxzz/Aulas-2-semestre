@@ -7,10 +7,21 @@
     <link rel="stylesheet" href="./estilos/index.css"
 </head>
 <body>
-    <h1>Bem vindo ao meu site</h1>
-    <input id="inputnome" type="text" placeholder="Digite seu nome">
-    <input id="inputsenha" type="password" placeholder="Digite sua senha">
-    <button id="btnenviar">Enviar</button>
+    <h1>COMPARADOR DE VALORES DIGITADOS</h1>
+    <div class="inputs">
+        <p>Vamos começar, digite seus números:</p>
+        <div id=num1 class=num1>
+            <input id="iptNum1" type="text" placeholder="Digite um número">
+        </div>
+        <div id=num2 class=num2>
+            <input id="iptNum2" type="text" placeholder="Digite outro número">
+        </div>
+        <button id="btnenviar">Enviar</button>
+    </div>
+    <p>O maior número é:</p>
+    <div class="resultado">
+        <label id="maiorNUM">0</label>
+    </div>
     <script src="./js/index.js"
     defer></script>
 </body>
