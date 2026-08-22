@@ -1,0 +1,40 @@
+body{
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.numeros{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 5%;
+    gap: 20px;
+}
+
+.operadores{
+    display: flex;
+    margin: 5%;
+    gap: 5px;
+}
+
+.confirmar{
+    display: flex;
+    margin: 5%;
+}
+
+.resultado{
+    display: flex;
+    margin: 5%;
+    background-color: white;
+    border-radius: 10px;
+    min-width: 50px;
+    width: flex;
+    height: 50px;
+    border-style: solid;
+    border-width: 2px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+

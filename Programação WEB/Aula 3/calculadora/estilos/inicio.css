@@ -1,0 +1,17 @@
+body{
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.texto{
+    font-size: 300%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.txtinfo{
+    margin-top: 5%;
+    margin-bottom: 15%;
+}
