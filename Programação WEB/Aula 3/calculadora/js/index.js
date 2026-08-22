@@ -9,41 +9,58 @@ const confirmar = document.getElementById("confirmar")
 const resultado = document.getElementById("resultado")
 const btnConfirmar = document.getElementById("btnConfirmar")
 const btnLimpar = document.getElementById("btnLimpar")
-
+let operacao = " ";
 
 function somar(){
-    let n1res = parseInt(num1.value);
-    let n2res = parseInt(num2.value);
-    const result = n1res + n2res
-    resultado.innerHTML = result
+    operacao ="soma";
 }
 
 function subtrair(){
-    let n1res = parseInt(num1.value);
-    let n2res = parseInt(num2.value);
-    const result = n1res - n2res
-    resultado.innerHTML = result
+    operacao ="subtrair";
 }
 
 function dividir(){
-    let n1res = parseInt(num1.value);
-    let n2res = parseInt(num2.value);
-    const result = n1res / n2res
-    resultado.innerHTML = result
+    operacao ="dividir";
 }
 
 function multiplicar(){
-    let n1res = parseInt(num1.value);
-    let n2res = parseInt(num2.value);
-    const result = n1res * n2res
-    resultado.innerHTML = result
-}
-function limparres(){
-    resultado.innerHTML = "   "
+    operacao ="multiplicar";
 }
 
-btnLimpar.onclick = limparres
+function confirma(){
+    let n1res = parseInt(num1.value);
+    let n2res = parseInt(num2.value);
+    let result = 0;
+    if(operacao === "soma"){
+        result = n1res + n2res
+        resultado.innerHTML= result
+    }
+    else if(operacao === "subtrair"){
+        result = n1res - n2res
+        resultado.innerHTML= result
+    }
+    else if(operacao === "dividir"){
+        result = n1res / n2res
+        resultado.innerHTML= result
+    }
+    else if(operacao === "multiplicar"){
+        result = n1res * n2res
+        resultado.innerHTML= result
+    }
+}
+
+
+function limpa_resp(){
+    num1.value = ""
+    num2.value = ""
+    operacao = ""
+    resultado.innerHTML = ""
+}
+
+
+btnLimpar.onclick = limpa_resp
+btnConfirmar.onclick = confirma
 soma.onclick = somar
 subtrai.onclick = subtrair
-divide.onclick = dividir
 multiplica.onclick = multiplicar
+divide.onclick = dividir

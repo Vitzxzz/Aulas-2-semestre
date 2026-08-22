@@ -1,8 +1,23 @@
 body{
-    background-color: gray;
+    background: #bdbdbd;
+    background: linear-gradient(90deg, rgba(189, 189, 189, 1) 0%, rgba(145, 145, 145, 1) 7%, rgba(131, 131, 131, 1) 11%, rgba(111, 111, 111, 1) 18%, rgba(110, 110, 110, 1) 80%, rgba(126, 126, 126, 1) 87%, rgba(146, 146, 146, 1) 93%, rgba(189, 189, 189, 1) 100%);
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;   
+    min-height: 90vh;
+}
+.card{
+    background-color: rgb(156, 152, 152);
+    border-radius: 10px;
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    padding: 0 30px 10px;
 }
 
 .numeros{
@@ -32,11 +47,87 @@ body{
     min-width: 50px;
     width: flex;
     height: 50px;
-    border-style: solid;
-    border-width: 2px;
+    border-color: #747475;
+    box-shadow: 0 0 0 0.2rem rgba(242, 242, 243, 0.25);
     justify-content: center;
     align-items: center;
     padding: 5px;
 }
+
+.botao{
+  appearance: none;
+  background-color: #fafbfc;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow:
+    rgba(27, 31, 35, 0.04) 0 1px 0,
+    rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292e;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+.botao:hover {
+  background-color: #f3f4f6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+.botao:disabled {
+  background-color: #fafbfc;
+  border-color: rgba(27, 31, 35, 0.15);
+  color: rgb(156, 152, 152);
+  cursor: default;
+}
+
+.botao:active {
+  background-color: #949596;
+  box-shadow: rgb(156, 152, 152) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+.botao:focus {
+  outline: 1px transparent;
+}
+
+.botao:before {
+  display: none;
+}
+
+.botao:-webkit-details-marker {
+  display: none;
+}
+
+
+.num{
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #555;
+  outline: none;
+}
+
+.num:focus {
+  border-color: #747475;
+  box-shadow: 0 0 0 0.2rem rgba(242, 242, 243, 0.25);
+}
+
+
+
 
 

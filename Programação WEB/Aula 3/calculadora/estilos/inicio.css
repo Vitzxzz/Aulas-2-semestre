@@ -1,8 +1,11 @@
 body{
-    background-color: gray;
+    background: #bdbdbd;
+    background: linear-gradient(90deg, rgba(189, 189, 189, 1) 0%, rgba(145, 145, 145, 1) 7%, rgba(111, 111, 111, 1) 18%, rgba(110, 110, 110, 1) 80%, rgba(146, 146, 146, 1) 93%, rgba(189, 189, 189, 1) 100%);
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;   
+    min-height: 90vh;
 }
 
 .texto{
@@ -13,5 +16,42 @@ body{
 
 .txtinfo{
     margin-top: 5%;
-    margin-bottom: 15%;
+    margin-bottom: 7%;
+}
+
+.card{
+    background-color: rgb(156, 152, 152);
+    border-radius: 10px;
+    width: auto;
+    height: 300px;
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    padding: 0 30px 10px;
+}
+
+.botao{
+  padding: 10px;
+  font-size: 13px;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.botao:hover {
+  background-color: #fff;
+  box-shadow: 0px 15px 20px rgb(58, 58, 58);
+  color: #000;
+  transform: translateY(-7px);
+}
+
+.botao:active {
+  transform: translateY(-1px);
 }
