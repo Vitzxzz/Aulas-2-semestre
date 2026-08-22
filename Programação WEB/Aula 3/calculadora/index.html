@@ -7,38 +7,49 @@
     <link rel="stylesheet" href="./estilos/index.css">
 </head>
 <body>
+    <!--Primeira divisão maior, campo dos números.-->
     <div class="numeros">
+        <!--Primeiro campo de números-->
         <div id="num1" class="num1">
             <input type="number" placeholder="Digite um número">
         </div>
+        <!--Segundo campo de números-->
         <div id="num2" class="num2">
             <input type="number" placeholder="Digite um número">
         </div>
     </div>
+    <!--Segunda divisão maior, campo dos operadores.-->
     <div class="operadores">
+        <!--Botão de soma-->
         <div id="soma" class="soma">
             <button class="btnSoma">SOMA (+)</button>
         </div>
+        <!--Botão de subtração-->
         <div id="subtrai" class="subtrai">
             <button class="btnSubtrai">SUBTRAI (-)</button>
         </div>
+        <!--Botão de multiplicação-->
         <div id="multiplica" class="multiplica">
             <button class="btnMulti">MULTIPLICA (x)</button>
         </div>
+        <!--Botão de divisão-->
         <div id="divide" class="divide">
             <button class="btnDivide">DIVIDE (÷)</button>
         </div>
     </div>
+    <!--Terceira divisão maior, campo dos botões (limpar e confirmar).-->
+    <!--Botão limpar-->
+    <div id="btnLimpar" class="limpar">
+        <button>LIMPAR</button>
+    </div>
+    <!--Botão confirmar-->
     <div id="btnConfirmar" class="confirmar">
             <button>CONFIRMAR</button>
     </div>
+    <!--Resultado-->
     <div id="resultado" class="resultado">
         <label>1234</label>
     </div>
-
-
-
-
     <script src="./js/index.js"
                 defer></script>
 </body>
