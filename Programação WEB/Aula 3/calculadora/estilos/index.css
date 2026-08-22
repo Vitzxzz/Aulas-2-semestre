@@ -20,7 +20,8 @@ body{
 
 .confirmar{
     display: flex;
-    margin: 5%;
+    margin-top: 15px;
+    margin-bottom: 5%;
 }
 
 .resultado{
@@ -37,4 +38,5 @@ body{
     align-items: center;
     padding: 5px;
 }
+
 
