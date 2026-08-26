@@ -28,3 +28,20 @@
 
 //(h) Escreva um programa em C que calcule a média e o desvio padrão das notas de uma turma de, no
 //máximo, 50 estudantes. Para cada estudante, há uma nota entre 0 e 10, com apenas uma casa decimal.
+
+//==================== EXERCÍCIOS DE MATRIZES ====================
+
+//(a) Considere um conjunto de cidades vizinhas que possuam estradas que as ligam,
+//sendo que algumas estradas são de mão dupla, enquanto outras são de mão única.
+//Uma matriz de adjacências contendo valores booleanos pode ser usada para
+//representar todas as ligações entre cidades. Supondo que o nome dessa matriz seja
+//Adj, então, por exemplo, se Adj[1][2] for true, isso indica que é possível ir
+//diretamente da cidade 1 para a cidade 2. Escreva uma função que, dada uma matriz de
+//adjacências e os números de duas cidades A e B, descubra um caminho entre A e B, se
+//existir.
+
+//(b) O Problema das Oito Rainhas consiste em alocar 8 rainhas em um tabuleiro de xadrez de
+//modo que nenhuma rainha ameace outra. Escreva um programa em C que represente o
+//tabuleiro de xadrez como sendo uma matriz 8x8 de valores booleanos, sendo que o valor true
+//indica que há uma rainha alocada na correspondente casa do tabuleiro, e gere, ao menos, uma
+//solução para o problema.
