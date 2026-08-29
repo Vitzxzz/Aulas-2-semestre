@@ -7,15 +7,15 @@ let id_aplicativo = [
     },
     {
         nome: "Whatsapp",
-        descricao: "Um aplicativo para se comunicar via texto ou ligação",
+        descricao: "Um aplicativo para se comunicar via texto ou ligação.",
     },
     {
         nome: "Snapchat",
-        descricao: "Um aplicativo para interagir com amigos e utilizar filtros",
+        descricao: "Um aplicativo para interagir com amigos e utilizar filtros.",
     },
     {
         nome: "Ifood",
-        descricao: "Um aplicativo para pedir comida via delivery",
+        descricao: "Um aplicativo para pedir comida via delivery.",
     }
 ]
 
