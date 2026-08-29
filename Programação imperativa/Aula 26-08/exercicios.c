@@ -45,3 +45,13 @@
 //tabuleiro de xadrez como sendo uma matriz 8x8 de valores booleanos, sendo que o valor true
 //indica que há uma rainha alocada na correspondente casa do tabuleiro, e gere, ao menos, uma
 //solução para o problema.
+
+
+#include <stdio.h>
+
+int main()
+{
+    printf("Hello World");
+
+    return 0;
+}
