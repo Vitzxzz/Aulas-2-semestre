@@ -11,12 +11,6 @@ $data = json_decode($jsonInput, true);
 $nome = $data['nome'] ?? "sem nome";
 $idade = $data['idade'] ?? "sem idade";
 
-/*
-"timestamp": 04/09/26 09:56,
-"username": mateus,
-"senha": oiasjd8a9hdsoaishdas9dh8
-*/
-
 //acessando o json
 date_default_timezone_set('America/Sao_Paulo');
 $timestamp = date("Y-m-d H:i:s");
@@ -24,7 +18,7 @@ $timestamp = date("Y-m-d H:i:s");
 $arrayData = [
     "timestamp" => $timestamp, 
     "nome" => $nome,
-    "idade" => sha1($idade)
+    "idade" => $idade
 ];
 
 $jsonString = json_encode($lista, JSON_PRETTY_PRINT);
