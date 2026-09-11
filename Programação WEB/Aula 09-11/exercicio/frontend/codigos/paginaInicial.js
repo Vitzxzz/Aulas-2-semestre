@@ -1,12 +1,15 @@
 console.log("Pagina Inicial rodando!")
-const btnComparar = document.getElementById("btnComparar");
-const inptN1 = document.getElementById("inptN1");
-const inptN2 = document.getElementById("inptN2");
 const btnenviar = document.getElementById("btnenviar");
+const tabelacorpo = document.getElementById("tabelaCorpo")
+const iptnome = document.getElementById("iptnome");
+const iptidade = document.getElementById("iptidade");
 
 btnenviar.onclick = () =>{
     console.log("arquivos enviados!")
-    sendData
+    sendData({
+        "nome": iptnome.value,
+        "idade": iptidade.value
+    })
 }
 
 function sendData(data){
@@ -34,5 +37,9 @@ function populate(data){
             <td>${item.nome}</td>
             <td>${item.idade}/td>
         <tr>
-        `)
+        `).join("")
+    console.log(respostafetch)
+    tabelacorpo.innerHTML = respostafetch
 }
+
+getData()
