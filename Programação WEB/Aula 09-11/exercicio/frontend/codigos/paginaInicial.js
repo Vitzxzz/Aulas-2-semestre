@@ -3,10 +3,6 @@ const btnComparar = document.getElementById("btnComparar");
 const inptN1 = document.getElementById("inptN1");
 const inptN2 = document.getElementById("inptN2");
 const btnenviar = document.getElementById("btnenviar");
-const idade = document.getElementById("idade");
-const nome = document.getElementById("nome");
-const resp = await fetch("http://localhost:8000/cadastro-dados.php");
-const dados = await resp.json();
 
 btnenviar.onclick = () =>{
     console.log("arquivos enviados!")
@@ -26,5 +22,17 @@ function sendData(data){
 }
 
 function getData(data){
-    document.getElementById("saida").innerHTML = dados.username;
+    fetch("http//localhost:8000")
+    .then(response => response.json())
+    .then(data => populate(data))
+}
+
+function populate(data){
+    console.log(data)
+    let respostafetch = data.map(item => `
+        <tr>
+            <td>${item.nome}</td>
+            <td>${item.idade}/td>
+        <tr>
+        `)
 }
