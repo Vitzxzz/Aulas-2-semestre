@@ -21,8 +21,18 @@ $arrayData = [
     "idade" => $idade
 ];
 
-//inserindo os dados no json
+//le o arquivo
+$dados = file_get_contents("cadastro-dados.json");
+
+//transforma o json em legivel php
+$lista = json_decode($dados,true);
+
+$lista[] = $arrayData;
+
+//transforma o array do php em json dnv
 $jsonString = json_encode($lista, JSON_PRETTY_PRINT);
+
+//salva
 file_put_contents('cadastro-dados.json', $jsonString);
 
 //resposta para o front
@@ -30,10 +40,4 @@ echo json_encode([
     "status" => "success",
     "message" => "Recebi $nome e $idade"
 ]);
-
-$dados = file_get_contents("cadastro-dados.json");
-$lista = json_decode($dados,true);
-
-$lista[] = $arrayData
-
 ?>
