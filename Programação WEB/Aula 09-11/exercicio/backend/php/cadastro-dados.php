@@ -21,6 +21,7 @@ $arrayData = [
     "idade" => $idade
 ];
 
+//inserindo os dados no json
 $jsonString = json_encode($lista, JSON_PRETTY_PRINT);
 file_put_contents('cadastro-dados.json', $jsonString);
 
