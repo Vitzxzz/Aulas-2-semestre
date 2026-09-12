@@ -2,6 +2,8 @@
 // configuração de segurança
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: *");
+header("Access-Control-Allow-Methods: POST, OPTIONS");
+header("Content-Type: application/json");
 
 //captura o post e transforma o json em um array
 $jsonInput = file_get_contents('php://input');
