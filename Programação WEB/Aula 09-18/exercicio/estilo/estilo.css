@@ -1,0 +1,44 @@
+body{
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    margin-top: 5%;
+    background-color: rgba(255, 0, 255, 0.715);
+    border: 5px black solid;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 10px;
+    padding: 5px;
+    width: 350px;
+    height: 350px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    color: white;
+}
+
+table{
+    margin-top: 30px;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+td {
+    background-color: rgba(255, 0, 255, 0.715);
+    padding: 10px;
+    font-size: 15px;
+}
+
+th {
+    background-color: rgba(149, 0, 149, 0.4);
+    padding: 20px;
+    font-size: 15px;
+}
