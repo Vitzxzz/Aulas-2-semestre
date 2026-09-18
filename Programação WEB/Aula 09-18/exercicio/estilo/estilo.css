@@ -8,14 +8,14 @@ body{
 
 .container{
     margin-top: 5%;
-    background-color: rgba(255, 0, 255, 0.715);
+    background-color: rgba(255, 0, 255, 0.425);
     border: 5px black solid;
     border-radius: 15px;
     text-align: center;
     font-size: 10px;
     padding: 5px;
     width: 350px;
-    height: 350px;
+    height: auto;
     padding: 15px;
     display: flex;
     justify-content: center;
@@ -32,13 +32,18 @@ table{
 }
 
 td {
-    background-color: rgba(255, 0, 255, 0.715);
+    color: black;
+    background-color: white;
     padding: 10px;
     font-size: 15px;
 }
 
 th {
-    background-color: rgba(149, 0, 149, 0.4);
+    background-color: rgba(149, 0, 149, 0.653);
     padding: 20px;
     font-size: 15px;
+}
+
+.btnVoltar{
+    margin: 15px;
 }
