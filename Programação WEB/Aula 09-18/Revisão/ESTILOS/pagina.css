@@ -1,5 +1,5 @@
 body{
-    background-color: red;
+    background-color: purple;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,4 +13,27 @@ body{
     text-align: center;
     font-size: 10px;
     padding: 5px;
+    width: 350px;
+    height: 350px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td {
+    background-color: rgba(149, 0, 149, 0.167);
+    padding: 10px;
+    font-size: 15px;
+}
+
+th {
+    background-color: rgba(149, 0, 149, 0.4);
+    padding: 20px;
+    font-size: 15px;
 }
