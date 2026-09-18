@@ -4,7 +4,7 @@ USE `meteflix`;
 CREATE TABLE usuarios (
 	id_usuario INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
-    email VARCHAR(100) UNIQUE
+    email VARCHAR(100) UNIQUE,
 );
 
 #Criação da tabela dos filmes
@@ -25,3 +25,10 @@ CREATE TABLE avaliacoes (
     FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario),
     FOREIGN KEY (id_filme) REFERENCES filmes(id_filme)
 );
+
+ALTER TABLE usuarios
+ADD COLUMN data_registro DATE DEFAULT (CURRENT_DATE);
+
+select * from usuarios;
+
+select * from filmes;
