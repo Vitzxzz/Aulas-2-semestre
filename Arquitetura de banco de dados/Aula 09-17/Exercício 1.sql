@@ -4,7 +4,7 @@ USE `meteflix`;
 CREATE TABLE usuarios (
 	id_usuario INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
-    email VARCHAR(100) UNIQUE,
+    email VARCHAR(100) UNIQUE
 );
 
 #Criação da tabela dos filmes
