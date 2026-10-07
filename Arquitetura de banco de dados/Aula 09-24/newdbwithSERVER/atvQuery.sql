@@ -18,6 +18,11 @@ SELECT * FROM Professores WHERE especialidade LIKE 'Programação';
 
 -- Nível: Organização e Joins (Relacionamentos)especialidade
 -- Ordem Alfabética: Liste o nome de todos os alunos, mas organize a lista em ordem alfabética (A-Z).
--- Quem ensina o quê?: Faça uma consulta que mostre o nome da disciplina ao lado do nome do professor responsável (Dica: Use JOIN entre Turmas e Professores).
--- Ocupação das Turmas: Escreva uma query que mostre quais IDs de alunos estão matriculados na Turma de ID número 1 (Dica: Olhe para a tabela Matriculas).
+SELECT	 t.nome_disciplina, p.nome, a.nome FROM turmas t JOIN professores p JOIN alunos a ON t.fk_id_professor = p.id_professor; 
+-- Quem ensina o quê?: Faça uma consulta que mostre o nome da disciplina ao lado do nome do professor responsável
+-- (Dica: Use JOIN entre Turmas e Professores).
+
+-- Ocupação das Turmas: Escreva uma query que mostre quais IDs de alunos estão matriculados na Turma de ID número 1 
+-- (Dica: Olhe para a tabela Matriculas).
+
 -- Desafio Final: Escreva uma query que mostre o nome do aluno e o ID da turma em que ele está matriculado.
