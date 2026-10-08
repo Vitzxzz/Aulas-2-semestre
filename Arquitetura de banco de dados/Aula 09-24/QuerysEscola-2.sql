@@ -14,8 +14,9 @@ SELECT * FROM Professores WHERE nome LIKE 'Ricardo Santos';
 -- Filtro de Matéria: Escreva uma query que liste apenas a turma cujo nome seja 'Banco de Dados'.
 SELECT nome_disciplina FROM Turmas WHERE nome_disciplina LIKE 'Banco de Dados';
 -- Pesquisa por Especialidade: Escreva uma query que retorne os professores que dão aula de 'Programação'.
+SELECT * FROM Professores WHERE especialidade LIKE 'Programação';
 
--- Nível: Organização e Joins (Relacionamentos)
+-- Nível: Organização e Joins (Relacionamentos)especialidade
 -- Ordem Alfabética: Liste o nome de todos os alunos, mas organize a lista em ordem alfabética (A-Z).
 -- Quem ensina o quê?: Faça uma consulta que mostre o nome da disciplina ao lado do nome do professor responsável (Dica: Use JOIN entre Turmas e Professores).
 -- Ocupação das Turmas: Escreva uma query que mostre quais IDs de alunos estão matriculados na Turma de ID número 1 (Dica: Olhe para a tabela Matriculas).
