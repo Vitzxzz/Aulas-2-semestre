@@ -11,7 +11,6 @@
 -- PARTE 2: EXERCÍCIOS COM SUBQUERYs
 
 -- Liste o ID e nome da disciplina de cada turma, seguido de uma coluna mostrando a quantidade de alunos matriculados em cada uma. Use uma subquery na cláusula SELECT para calcular a quantidade de alunos.
-
 -- Encontre todos os alunos que estão matriculados em turmas de disciplinas que começam com a letra "M". Use uma subquery para identificar primeiro quais são essas turmas.
 -- Liste todos os professores que têm pelo menos uma turma atribuída a eles. Use o operador EXISTS para verificar se cada professor tem turmas.
 -- Encontre o professor cuja turma tem o maior número de alunos matriculados. Exiba o nome do professor, o nome da disciplina e a quantidade de alunos.
