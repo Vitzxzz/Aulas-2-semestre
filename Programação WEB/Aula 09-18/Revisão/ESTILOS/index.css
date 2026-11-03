@@ -1,0 +1,31 @@
+body{
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    background-color: white;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inpt{
+    margin: 3px;
+    padding: 3px;
+}
+
+.btn{
+    border: none;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    margin-top: 7px;
+}
