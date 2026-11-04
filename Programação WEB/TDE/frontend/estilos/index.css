@@ -1,5 +1,5 @@
 body {
-    background-color: beige;
+    background-color: rgba(111, 111, 252, 0.363);
     font-family: sans-serif;
 }
 header {
@@ -21,10 +21,14 @@ header {
     flex-direction: column;
     gap: 10px;
     margin-top: 5%;
+    border: 1px black solid;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 .area-tabela {
     flex: 2;
+    border-radius: 10px;
 }
 table {
     width: 75%;
