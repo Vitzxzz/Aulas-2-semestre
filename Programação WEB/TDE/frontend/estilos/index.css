@@ -8,6 +8,7 @@ header {
     text-align: center;
     padding: 20px 0;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 .container {
     display: flex;
@@ -47,11 +48,14 @@ th{
     color: white;
     text-align: center;
     padding: 20px 0;
-    margin-bottom: 20px;        
+    margin-bottom: 20px; 
+    border-radius: 10px;       
 }
 
 .area-cadastro input{
     padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
 }
 
 .area-cadastro button{
@@ -59,6 +63,8 @@ th{
     width: 50%;
     align-self: center;
     /*Align-self: center - deixa apenas esse botão centralizado no meio da div */
+    border-radius: 10px;
+    border: 1px solid black;
 }
 
 .assinatura {
