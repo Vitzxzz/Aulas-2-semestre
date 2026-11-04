@@ -24,11 +24,12 @@ header {
     border: 1px black solid;
     border-radius: 10px;
     padding: 5px;
+    margin-left: 5%;
 }
 
 .area-tabela {
     flex: 2;
-    border-radius: 10px;
+    margin-right: 5%;
 }
 table {
     width: 75%;
@@ -45,6 +46,10 @@ table, th, td {
 th{
     background-color: rgb(0, 1, 46);
     color: white;
+}
+
+td{
+    background-color: white;
 }
 
 .titulocad{
