@@ -10,14 +10,42 @@
     <header>
         <h1>SISTEMA DE GARAGEM</h1>
     </header>
-    <!--Inicio da div da area que o usuario poderá cadastrar os veículos-->
-    <div class="area-cadastro">
-        <input type="text" id="modelo" placeholder="Digite o modelo do veículo!">
-        <input type="text" id="marca" placeholder="Digite a marca do veículo!">
-        <input type="number" id="ano" placeholder="Digite o ano do veículo!">
-        <input type="number" step="0.01" id="preco" placeholder="Digite o preço do veículo!">
-        <!--O step="0.01" permite que seja digitado valores decimais ou centavos ex: 85000.50-->
-    </div>
+    <!--Classe main para conseguir utilizar o flexbox de maneira correta-->
+    <main class="container">
+         <!--Inicio da div da area que o usuario poderá cadastrar os veículos-->
+        <div class="area-cadastro">
+            <div class="titulocad">
+                <h3>INSIRA UM VEÍCULO!</h3>
+            </div>
+            <input type="text" id="modelo" placeholder="Digite o modelo do veículo!">
+            <input type="text" id="marca" placeholder="Digite a marca do veículo!">
+            <input type="number" id="ano" placeholder="Digite o ano do veículo!">
+            <input type="number" step="0.01" id="preco" placeholder="Digite o preço do veículo!">
+            <!--O step="0.01" permite que seja digitado valores decimais ou centavos ex: 85000.50-->
+            <button id="btnconfirma">Confimar</button>
+        </div>
+         <!--Inicio da div da area que o usuario poderá ver os veículos-->
+        <div class="area-tabela">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Modelo</th>
+                        <th>Marca</th>
+                        <th>Ano</th>
+                        <th>Preço</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="corpotabela-carros">
+
+                </tbody>
+            </table>
+        </div>
+        <div class="assinatura">
+            <p>Feito por: Vitor Bonfim - Ciência da computação turma B</p>
+        </div>
+    </main>    
     <script src="../codigos/index.js" defer></script>
 </body>
 </html>
