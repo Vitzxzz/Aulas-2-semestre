@@ -6,13 +6,12 @@ const ano = document.getElementById("ano")
 const preco = document.getElementById("preco")
 const btnconfirma = document.getElementById("btnconfirma")
 const tabelacorpo = document.getElementById("corpotabela-carros")
-const btnatualiza = document.getElementById("btnatualizar")
-const btndelete = document.getElementById("btndelete")
 let idedicao = null
+
 
 function getCarros(){
     console.log("dando get nos carros")
-    fetch("http://localhost:8000/get-carros.php")
+    fetch("http://localhost:8000/get_carros.php")
     .then(response => response.json())
     .then(data => populate(data))
 }
@@ -28,13 +27,15 @@ function populate(data){
             <td>${item.ano}</td>
             <td>R$ ${item.preco}</td>
             <td>
-                <button onclick="carregarParaEditar(${item.id}, '${item.modelo}', '${item.marca}', ${item.ano}, ${item.preco})">Atualizar</button>
+                <button onclick="update(${item.id}, '${item.modelo}', '${item.marca}', ${item.ano}, ${item.preco})">Atualizar</button>
                 <button onclick="fakedelete(${item.id})">Excluir</button>
             </td>
             </td>
         </tr>
     `).join("")
 }
+
+btnconfirma.onclick = create
 
 function create(){
     console.log("Criando um novo veículo")
