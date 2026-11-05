@@ -8,6 +8,7 @@ const btnconfirma = document.getElementById("btnconfirma")
 const tabelacorpo = document.getElementById("corpotabela-carros")
 const btnatualiza = document.getElementById("btnatualizar")
 const btndelete = document.getElementById("btndelete")
+let idedicao = null
 
 function getCarros(){
     console.log("dando get nos carros")
@@ -27,8 +28,9 @@ function populate(data){
             <td>${item.ano}</td>
             <td>R$ ${item.preco}</td>
             <td>
-                <button onclick="atualizar(${item.id})">Atualizar</button>
-                <button onclick="deletar(${item.id})">Excluir</button>
+                <button onclick="carregarParaEditar(${item.id}, '${item.modelo}', '${item.marca}', ${item.ano}, ${item.preco})">Atualizar</button>
+                <button onclick="fakedelete(${item.id})">Excluir</button>
+            </td>
             </td>
         </tr>
     `).join("")
@@ -58,6 +60,45 @@ function create(){
 }
 )}
 
+function fakedelete(id){
+    console.log("Deletando um veículo")
+    fetch("http://localhost:8000/deletar_carro.php", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id: id })
+    }).then(response => response.json())
+    .then(data => {
+        console.log(data.mensagem);
+        getCarros();})
+    }
+
+function update(id) {
+    const novoModelo = prompt("Digite o novo modelo:");
+    const novaMarca = prompt("Digite a nova marca:");
+    const novoAno = prompt("Digite o novo ano:");
+    const novoPreco = prompt("Digite o novo preço:");
+
+    if (!novoModelo || !novaMarca || !novoAno || !novoPreco) return;
+
+    const dados = {
+        id: id,
+        modelo: novoModelo,
+        marca: novaMarca,
+        ano: novoAno,
+        preco: novoPreco
+    };
+
+    fetch("http://localhost:8000/atualizar_carro.php", {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(dados)
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log(data.mensagem);
+        getCarros(); // Re-GET obrigatório
+    });
+}
 
 
 getCarros()

@@ -10,6 +10,6 @@
     try {
         $pdo = new PDO("mysql:host=$host;dbname=$banco",$user,$senha);
     } catch (PDOException $e){
-        echo json_encode(["erro" => $e->getMessage()]);
+        echo json_encode(["erro" => "Erro de conexão."]);
     }
 ?>
