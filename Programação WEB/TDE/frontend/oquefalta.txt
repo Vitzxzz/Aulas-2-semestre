@@ -1,6 +1,0 @@
-No dia de hoje, 03/11 (Terça) eu criei o banco de dados já, criei o frontend, estando html e css praticamente prontos. O html está com uma tabela teste inserida, pois ainda não comecei a mexer com o php.
-
-Para amanhã (Quarta) preciso começar a criar os arquivos PHP, pois somente com eles feitos conseguirei terminar meu javascript que ainda está bem mal feito. Então a prioridade
-para amanhã é fazer os arquivos php e deixá-los 100% funcionais, para que após terminar eles eu consiga finalizar meu JS. 
-
-Ainda terei quinta a noite para fazer o que faltar, então o tempo está ao meu lado.
