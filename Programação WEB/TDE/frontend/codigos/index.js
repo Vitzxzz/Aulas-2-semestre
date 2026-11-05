@@ -11,7 +11,7 @@ const btndelete = document.getElementById("btndelete")
 
 function getCarros(){
     console.log("dando get nos carros")
-    fetch("inserir http do php aqui!!!!!")
+    fetch("http://localhost:8000/get-carros.php")
     .then(response => response.json())
     .then(data => populate(data))
 }
@@ -31,21 +31,33 @@ function populate(data){
                 <button onclick="deletar(${item.id})">Excluir</button>
             </td>
         </tr>
-    ).join("")`)
+    `).join("")
 }
 
-function atualizar(){
-    console.log("ta funcionando a atualização")
+function create(){
+    console.log("Criando um novo veículo")
+    const dados ={
+        modelo: modelo.value,
+        marca: marca.value,
+        ano: ano.value,
+        preco: preco.value
+    };
+    fetch("http://localhost:8000/cadastrar_carro.php", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(dados)
+    }).then(response => response.json())
+    .then(data => {
+        console.log(data.mensagem);
+        getCarros();
+        
+        modelo.value = "";
+        marca.value = "";
+        ano.value = "";
+        preco.value = "";
 }
+)}
 
-function deletar(){
-    console.log("ta funcionando o delete")
-}
-function confirmar(){
-    console.log("Confirmar ta funcionando tbm")
-}
 
-btnconfirma.onclick = confirmar
-btnatualiza.onclick = atualizar
-btndelete.onclick = deletar
+
 getCarros()
