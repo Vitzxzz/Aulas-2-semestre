@@ -11,7 +11,4 @@ CREATE TABLE carros(
     ativo INT DEFAULT 1
 );
 
-INSERT INTO carros (modelo, marca, ano, preco)
-VALUES ("CRUZE", "CHEVROLET", 2022, 85000);
-
 SELECT * FROM carros

@@ -97,7 +97,7 @@ function update(id) {
     .then(response => response.json())
     .then(data => {
         console.log(data.mensagem);
-        getCarros(); // Re-GET obrigatório
+        getCarros();
     });
 }
 
